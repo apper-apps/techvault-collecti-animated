@@ -22,7 +22,7 @@ const ShopPage = () => {
   const { addToCart } = useCart()
   const { filters, sortBy, filteredProducts, updateFilters, setSortBy, resetFilters } = useFilters(products)
 
-  const loadProducts = async () => {
+  const loadProducts = async (abortSignal) => {
     try {
       setLoading(true)
       setError("")
@@ -36,16 +36,36 @@ const ShopPage = () => {
         data = await productService.getAll()
       }
       
-      setProducts(data)
+      // Check if component is still mounted before updating state
+      if (!abortSignal?.aborted) {
+        setProducts(data)
+      }
     } catch (err) {
-      setError(err.message || "Failed to load products")
+      // Only update state if not aborted and component is still mounted
+      if (!abortSignal?.aborted) {
+        setError(err.message || "Failed to load products")
+      }
     } finally {
-      setLoading(false)
+      // Only update loading state if not aborted
+      if (!abortSignal?.aborted) {
+        setLoading(false)
+      }
     }
   }
 
   useEffect(() => {
-    loadProducts()
+    const abortController = new AbortController()
+    
+    // Use setTimeout to ensure state updates happen after render
+    const timeoutId = setTimeout(() => {
+      loadProducts(abortController.signal)
+    }, 0)
+    
+    // Cleanup function to prevent setState after unmount
+    return () => {
+      clearTimeout(timeoutId)
+      abortController.abort()
+    }
   }, [searchParams])
 
   const handleRetry = () => {
