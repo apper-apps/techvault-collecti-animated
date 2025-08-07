@@ -50,27 +50,29 @@ const PriceRange = ({ min, max, value, onChange }) => {
         </div>
       </div>
 
-      <style jsx>{`
-        .slider::-webkit-slider-thumb {
-          appearance: none;
-          height: 20px;
-          width: 20px;
-          border-radius: 50%;
-          background: linear-gradient(45deg, #0ea5e9, #38bdf8);
-          cursor: pointer;
-          box-shadow: 0 0 10px rgba(14, 165, 233, 0.3);
-        }
-        
-        .slider::-moz-range-thumb {
-          height: 20px;
-          width: 20px;
-          border-radius: 50%;
-          background: linear-gradient(45deg, #0ea5e9, #38bdf8);
-          cursor: pointer;
-          border: none;
-          box-shadow: 0 0 10px rgba(14, 165, 233, 0.3);
-        }
-      `}</style>
+<style dangerouslySetInnerHTML={{
+        __html: `
+          .price-range-slider::-webkit-slider-thumb {
+            appearance: none;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #0ea5e9, #38bdf8);
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(14, 165, 233, 0.3);
+          }
+          
+          .price-range-slider::-moz-range-thumb {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #0ea5e9, #38bdf8);
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 0 10px rgba(14, 165, 233, 0.3);
+          }
+        `
+      }} />
     </div>
   )
 }
