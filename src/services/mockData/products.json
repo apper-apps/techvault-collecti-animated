@@ -1,0 +1,97 @@
+[
+  {
+    "Id": 1,
+    "name": "MacBook Pro 16-inch M2 Max",
+    "brand": "Apple",
+    "price": 2499,
+    "images": [
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800&h=600&fit=crop"
+    ],
+    "processor": "Apple M2 Max 12-core CPU",
+    "ram": "32GB Unified Memory",
+    "storage": "1TB SSD",
+    "display": "16.2-inch Liquid Retina XDR (3456×2234)",
+    "graphics": "38-core GPU",
+    "weight": "4.7 lbs",
+    "battery": "Up to 22 hours video playback",
+    "inStock": true
+  },
+  {
+    "Id": 2,
+    "name": "Dell XPS 13 Plus",
+    "brand": "Dell",
+    "price": 1299,
+    "images": [
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1515343480029-43cdfe6cba65?w=800&h=600&fit=crop"
+    ],
+    "processor": "12th Gen Intel Core i7-1260P",
+    "ram": "16GB LPDDR5",
+    "storage": "512GB PCIe SSD",
+    "display": "13.4-inch FHD+ InfinityEdge (1920×1200)",
+    "graphics": "Intel Iris Xe Graphics",
+    "weight": "2.73 lbs",
+    "battery": "Up to 12 hours",
+    "inStock": true
+  },
+  {
+    "Id": 3,
+    "name": "ASUS ROG Zephyrus G14",
+    "brand": "ASUS",
+    "price": 1799,
+    "images": [
+      "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=800&h=600&fit=crop"
+    ],
+    "processor": "AMD Ryzen 9 6900HS",
+    "ram": "32GB DDR5",
+    "storage": "1TB PCIe 4.0 SSD",
+    "display": "14-inch QHD 120Hz (2560×1600)",
+    "graphics": "AMD Radeon RX 6700S",
+    "weight": "3.64 lbs",
+    "battery": "Up to 10 hours",
+    "inStock": true
+  },
+  {
+    "Id": 4,
+    "name": "HP Spectre x360 14",
+    "brand": "HP",
+    "price": 1149,
+    "images": [
+      "https://images.unsplash.com/photo-1484788984921-03950022c9ef?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1541278107931-e006523892df?w=800&h=600&fit=crop"
+    ],
+    "processor": "12th Gen Intel Core i7-1255U",
+    "ram": "16GB LPDDR4x",
+    "storage": "512GB PCIe SSD",
+    "display": "13.5-inch 3K2K OLED Touch (3000×2000)",
+    "graphics": "Intel Iris Xe Graphics",
+    "weight": "3.01 lbs",
+    "battery": "Up to 17 hours",
+    "inStock": true
+  },
+  {
+    "Id": 5,
+    "name": "Lenovo ThinkPad X1 Carbon Gen 11",
+    "brand": "Lenovo",
+    "price": 1899,
+    "images": [
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1616763355603-9755a640a287?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=800&h=600&fit=crop"
+    ],
+    "processor": "13th Gen Intel Core i7-1355U",
+    "ram": "16GB LPDDR5",
+    "storage": "1TB PCIe SSD",
+    "display": "14-inch WUXGA IPS (1920×1200)",
+    "graphics": "Intel Iris Xe Graphics",
+    "weight": "2.48 lbs",
+    "battery": "Up to 15 hours",
+    "inStock": false
+  }
+]
